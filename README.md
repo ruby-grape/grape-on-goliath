@@ -18,10 +18,10 @@ $ bundle exec ruby app.rb -sv
 
 ### Hello World
 
-Navigate to http://localhost:9000/api/ping with a browser or use `curl`.
+Navigate to http://0.0.0.0:9000/api/ping with a browser or use `curl`.
 
 ```
-$ curl http://localhost:9000/api/ping
+$ curl http://0.0.0.0:9000/api/ping
 
 {"ping":"pong"}
 ```

@@ -13,4 +13,3 @@ end
 require 'goliath'
 require 'api'
 require 'acme_app'
-
