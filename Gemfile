@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'goliath', '~> 1.0.3'
-gem 'grape', '~> 0.6.0'
+gem 'grape', '~> 0.12.0'
 
 group :development do
   gem 'rake', '~> 10.0.3'
