@@ -1,9 +1,9 @@
 Grape API on Rack
 =================
 
-[![Build Status](https://secure.travis-ci.org/dblock/grape-on-goliath.png)](http://travis-ci.org/dblock/grape-on-goliath)
+[![Build Status](https://secure.travis-ci.org/ruby-grape/grape-on-goliath.png)](http://travis-ci.org/ruby-grape/grape-on-goliath)
 
-A [Grape](http://github.com/intridea/grape) API mounted on Goliath.
+A [Grape](http://github.com/ruby-grape/grape) API mounted on Goliath.
 
 * [ping](api/ping.rb): a hello world example that returns a JSON document
 
