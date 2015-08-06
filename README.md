@@ -7,6 +7,11 @@ A [Grape](http://github.com/ruby-grape/grape) API mounted on Goliath.
 
 * [ping](api/ping.rb): a hello world example that returns a JSON document
 
+Heroku
+------
+
+Grape-on-goliath is deployed on Heroku at [grape-on-goliath.herokuapp.com](http://grape-on-goliath.herokuapp.com/api/ping).
+
 Run
 ---
 
