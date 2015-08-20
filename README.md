@@ -2,6 +2,7 @@ Grape API on Goliath
 ====================
 
 [![Build Status](https://secure.travis-ci.org/ruby-grape/grape-on-goliath.png)](http://travis-ci.org/ruby-grape/grape-on-goliath)
+[![Dependency Status](https://gemnasium.com/ruby-grape/grape-on-goliath.svg)](https://gemnasium.com/ruby-grape/grape-on-goliath)
 
 A [Grape](http://github.com/ruby-grape/grape) API mounted on [Goliath](http://postrank-labs.github.io/goliath), a non-blocking Ruby web server framework.
 
