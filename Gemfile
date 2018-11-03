@@ -1,9 +1,10 @@
 source 'http://rubygems.org'
 
-ruby '2.2.4'
+ruby '2.5.3'
 
 gem 'goliath'
 gem 'grape'
+gem 'rack-contrib', '~> 1.4.0'
 
 group :development do
   gem 'rake'
@@ -11,7 +12,7 @@ group :development do
 end
 
 group :test do
-  gem 'rspec'
-  gem 'rack-test'
   gem 'em-http-request'
+  gem 'rack-test'
+  gem 'rspec'
 end

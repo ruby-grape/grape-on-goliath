@@ -12,7 +12,7 @@ end
 
 task :environment do
   ENV['RACK_ENV'] ||= 'development'
-  require File.expand_path('../config/environment', __FILE__)
+  require File.expand_path('config/environment', __dir__)
 end
 
 task routes: :environment do
@@ -24,4 +24,4 @@ end
 require 'rubocop/rake_task'
 RuboCop::RakeTask.new(:rubocop)
 
-task default: [:rubocop, :spec]
+task default: %i[rubocop spec]
