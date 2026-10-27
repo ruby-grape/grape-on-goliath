@@ -1,0 +1,1 @@
+--pattern {app.rb,api/**/*.rb,app/**/*.rb,config/**/*.rb}

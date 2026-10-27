@@ -28,6 +28,18 @@ $ bundle exec ruby app.rb -sv
 
 `app.rb` enables Goliath's application runner. Loading the environment for Rake or tests loads only the API, avoiding an extra server starting when those processes exit.
 
+### Development Reloading
+
+To pick up code changes automatically, run:
+
+```
+bundle exec rerun -- ruby app.rb -sv -e development
+```
+
+[Rerun](https://github.com/alexch/rerun) watches `app.rb` and Ruby files under `api/`, `app/`, and `config/`, restarting the server when files are added, changed, or removed. For example, edit the response in `api/ping.rb`, save, and request `/api/ping` again after the server restarts. On shared filesystems that do not deliver file notifications, add `--force-polling` before `--`.
+
+The whole process restarts deliberately: Grape compiles routes and retains references to mounted API classes, so reloading individual files with `Rack::Reloader` does not reliably update mounted routes. Requests can be interrupted during a restart; use this command only for development. The plain `bundle exec ruby app.rb -sv` command above does not watch or reload files.
+
 ### Hello World
 
 Navigate to http://localhost:9000/api/ping with a browser or use `curl`.
