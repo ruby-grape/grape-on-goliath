@@ -1,8 +1,0 @@
-sudo: false
-
-rvm:
-  - 2.5.3
-
-language: ruby
-
-cache: bundler

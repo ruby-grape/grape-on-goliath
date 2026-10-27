@@ -1,11 +1,12 @@
 AllCops:
+  NewCops: enable
   Exclude:
     - vendor/**/*
 
 Metrics:
   Enabled: false
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 512
 
 Style/Documentation:
@@ -18,6 +19,3 @@ Naming/MethodName:
   Enabled: false
 
 inherit_from: .rubocop_todo.yml
-
-inherit_from: .rubocop_todo.yml
-
