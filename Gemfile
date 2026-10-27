@@ -8,6 +8,7 @@ gem 'rack-contrib', '~> 1.4.0'
 
 group :development do
   gem 'rake'
+  gem 'rerun', '~> 0.14', require: false
   gem 'rubocop'
 end
 
